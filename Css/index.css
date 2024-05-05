@@ -28,13 +28,10 @@ header img {
   border-radius: 11vh;
 }
 
-
-
 nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
-
 }
 
 nav div a {
@@ -42,35 +39,53 @@ nav div a {
   color: black;
   text-decoration: none;
 }
- 
+
 #menu {
   width: 100%;
-display: flex;
-justify-content: space-around;
-align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
-  div a {
+div a {
   margin-left: 5vh;
   height: 5vh;
 }
 
 .principal {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 80%;
 }
 
-article {
-  width: 25%;
-  margin: 2vh;
-  text-align: center;
+.seccion {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+   "img h2"
+   "p p"
+   "p p";
 }
+
+.seccion > img {
+  grid-area: img;
+}
+
+.seccion > .titulos {
+  grid-area: h2;
+}
+
+.seccion > .texto {
+  grid-area: p;
+}
+
 
 article img {
   width: 100%;
-  height: 33%;
   border-radius: 5vh;
+  padding: 1vh;
 }
 
 .saludo {
@@ -88,29 +103,25 @@ article img {
 
 .titulo {
   margin-bottom: 5vh;
-  
 }
 
 #contactanos {
   display: flex;
   align-items: end;
-  
 }
 .titulos {
   display: flex;
-  align-items: center;
+  text-align: center;
   background-color: rgb(217 217 217);
   border-radius: 5vh;
-  height: 15vh;
-  margin: 2vh 0 ;
-
+  height: 80%;
+  margin: 2vh 0;
 }
 
-.titulos h2 {
+.titulos h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
   width: 80%;
 }
 
@@ -118,14 +129,13 @@ article img {
   background-color: rgb(174 174 174);
   border-radius: 5vh;
   padding: 2vh;
-  font-weight:500;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35vh;
-
+  height: 22vh;
 }
- 
+
 footer {
   background-color: darkgreen;
   display: flex;
@@ -141,13 +151,8 @@ footer {
 .redes {
   display: flex;
   align-items: center;
-
 }
 
 footer h3 {
   margin: 2vh;
 }
-
-
-
-
